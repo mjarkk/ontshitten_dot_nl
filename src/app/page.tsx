@@ -328,8 +328,8 @@ export default function Home() {
       <footer className="bg-[#3d2314] text-white py-8">
         <div className="container mx-auto text-center">
           <p>
-            © 2023 Ontshitten.nl - Het Heilige Evangelie van Darmreinigend
-            Verlichtingswerk
+            © {new Date().getFullYear()} Ontshitten.nl - Het Heilige Evangelie
+            van Darmreinigend Verlichtingswerk
           </p>
           <p className="mt-2 text-sm">
             Wettelijke Shit-Disclaimer: Ontshitten.nl aanvaardt geen
