@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Merriweather, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
-const geist = Geist({
+const headings = Merriweather({
+  weight: ["400"],
   subsets: ["latin"],
+  variable: "--font-headings",
+  display: "swap",
+});
+
+const text = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-text",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
-      <body className={`${geist.className} antialiased`}>{children}</body>
+      <body className={`${headings.variable} ${text.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

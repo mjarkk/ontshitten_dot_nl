@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
+import OntshitCounter from "@/components/OntshitCounter";
 
 export default function Home() {
   const ontshitStappenRef = useRef<HTMLElement>(null);
@@ -36,6 +37,13 @@ export default function Home() {
             >
               🚀 ONTSNAP AAN DE DREK-DYSTOPIE!
             </button>
+          </div>
+        </section>
+
+        {/* Adding the counter immediately after the hero section */}
+        <section className="py-8 bg-[#f5e8dc]">
+          <div className="container mx-auto">
+            <OntshitCounter />
           </div>
         </section>
 
